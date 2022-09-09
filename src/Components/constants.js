@@ -1,5 +1,5 @@
 // const HOST_URL = "http://localhost:5000"
-const HOST_URL = "https://my-keep-notes.herokuapp.com/"
+const HOST_URL = "https://srinivas-notes.herokuapp.com/"
 
 // https://my-keep-notes.herokuapp.com/
 
