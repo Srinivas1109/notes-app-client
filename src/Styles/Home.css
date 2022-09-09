@@ -1,0 +1,5 @@
+.main{
+    background-color: var(--body-background);
+    min-height: calc(100vh - 14vh);
+    display: flex;
+}

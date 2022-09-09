@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Square+Peg&display=swap');
+
+.notes-wrapper{
+    overflow: hidden;
+}
+
+.user-all-notes {
+    width: 100%;
+    height: var(--page-height);
+    background-color: var(--body-background);
+    margin-top: 10vh;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.active-note {
+    color: #0CE739;
+}
+
+.notes-container {
+    width: 60vw;
+    height: 80vh;
+    /* border: 1px solid red; */
+    /* background-color: var(--background); */
+    display: flex;
+    /* box-shadow: 0 0 0.5vh var(--primary-color); */
+    border-radius: 1vh;
+}
+
+.note-titles {
+    width: 30%;
+    /* border: 2px solid yellow; */
+    /* height: inherit; */
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: column-reverse; */
+    border-radius: 1vh 0 0 1vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #fff;
+    border-right: 1vh solid var(--sub-headings);
+}
+
+.note-titles::-webkit-scrollbar {
+    display: none;
+}
+
+.title-note-image {
+    font-size: medium;
+    text-decoration: none;
+}
+
+.note-edit {
+    width: 70%;
+    /* border: 1px solid blue; */
+    /* background-color: #fff; */
+}
+
+.current-note-title {
+    height: 10%;
+    width: 100%;
+    border-radius: 0 1vh 0 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 2vh;
+    font-family: monospace;
+    background-color: var(--main-headings);
+    /* flex-flow: row-reverse; */
+    /* margin: 0 1vh; */
+}
+
+.input-container{
+    width: fit-content;
+}
+
+.active-title-input{
+    /* width: fit-content; */
+    /* width: inherit; */
+    outline: none;
+    border: none;
+    padding: 1vh;
+    background-color: var(--main-headings);
+    color: #fff;
+}
+
+.active-title-input:focus{
+    border-bottom: 0.3vh solid #fff;
+}
+
+.active-title-input::placeholder{
+    color: #fff;
+    opacity: 0.7;
+}
+
+.current-note-editor {
+    height: 90%;
+    width: 100%;
+    /* border: 2px solid aqua; */
+    background-color: white;
+    /* border-radius: 1vh; */
+}
+
+.text-editor-container {
+    width: 100%;
+    height: inherit;
+    border-radius: 1vh;
+    border-radius: 0 0 1vh 0;
+    /* overflow: hidden; */
+    /* border: 2px solid brown; */
+}
+
+.editor-title-note-image {
+    font-size: large;
+}
+
+.no-note-img {
+    /* border: 2px solid green; */
+    background-image: url("../Styles/Images/background.jpg");
+    background-size: cover;
+    /* background-repeat: repeat-y; */
+    width: 100%;
+    height: 111%;
+
+}
+
+.image-text {
+    font-family: cursive;
+    font-weight: 900;
+    position: relative;
+    top: 25%;
+    left: 45%;
+    transform: rotate(-45deg);
+}
+
+.text-editor {
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    border: none;
+    /* border-radius: 1vh; */
+    /* border: 2px solid red; */
+}
+
+.ql-container.ql-snow {
+    height: 92%;
+    border-radius: 0 1vh 0 0;
+    /* border: 1px solid #ccc; */
+}
+
+.new-note, .save-note{
+    padding: 1vh 2vh;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vh;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-family: monospace;
+    font-weight: 700;
+    cursor: pointer;
+    /* border-radius: 50%; */
+}
+
+.no-note-titles{
+    /* border: 2px solid red; */
+    /* height: 100%; */
+    height: 100%;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 5vh; */
+    border-left: 2vh solid var(--secondary-color);
+    overflow: hidden;
+    /* border-top: 2vh solid var(--main-headings); */
+}
+
+.no-note-titles-text{
+    font-family: 'Square Peg', cursive;
+    transform: rotate(-45deg) scale(3);
+    border-left: 0.5vh solid var(--main-headings);
+    overflow: hidden;
+}
+
+.save-note{
+    background-color: var(--primary-color);
+    display: none;
+}
+
+.btns{
+    display: flex;
+}
+
+.margin-left{
+    margin-left: 1vh;
+}
+
+.modal-back-drop{
+    margin-top: 10vh;
+    height: var(--page-height);
+    width: 100vw;
+    background-color:gray;
+    transition: 1s;
+    border: #0CE739;
+    opacity: .5;
+    position: absolute;
+}

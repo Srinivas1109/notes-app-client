@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    --background: #001219;
+    --body-background: #333533;
+    --main-headings: #e76f51;
+    --sub-headings: #f4a261;
+    --primary-color: #e9c46a;
+    --secondary-color: #2a9d8f;
+    --white: #ffffff;
+    --font-size-heading: 1.5vw;
+    --page-height: calc(100vh - 10vh);
+    
+}
+
+::-webkit-scrollbar {
+    width: 0.65vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #edf6f9;
+    border-radius: 100vw;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 100vw;
+    background-color: var(--primary-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--sub-headings); 
+  }

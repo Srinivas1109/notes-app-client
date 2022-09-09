@@ -1,0 +1,77 @@
+.modal-wrapper {
+    height: 100%;
+    width: 100%;
+    /* border: 0.5px solid red; */
+    position: fixed;
+    /* overflow: hidden; */
+    /* color: white; */
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.modal-container {
+    height: 30%;
+    width: 35%;
+    background-color: #fff;
+    border-radius: 1vh;
+    box-shadow: 0 0 5vh gray;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    border-radius: 1vh;
+    background-color: var(--sub-headings);
+    color: #fff;
+    /* opacity: 1; */
+}
+
+.modal-title span {
+    font-size: 3vh;
+    color: #fff;
+    cursor: pointer;
+    height: 20%;
+    /* border: 1px solid red; */
+}
+
+.modal-content {
+    margin-top: 1vh;
+    background-color: #F2F3F5;
+    font-family: sans-serif;
+    padding: 1vh;
+    border-radius: 1vh;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-footer button {
+    padding: 1vh;
+    width: 25%;
+    height: 100%;
+    border: none;
+    border-radius: 1vh;
+    margin-top: 1vh;
+    color: #fff;
+    cursor: pointer;
+}
+
+.positive-btn {
+    background-color: #198754;
+}
+
+.negative-btn {
+    background-color: red;
+}
